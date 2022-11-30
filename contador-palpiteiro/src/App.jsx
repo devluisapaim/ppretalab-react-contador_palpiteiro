@@ -1,12 +1,14 @@
 import "./App.css";
-import Header from "./components/Header";
-import Contador from "./components/Contador";
+import Header from "./components/Header/Header";
+import Contador from "./components/Contador/Contador";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header nomeGrupo="Grupo Ada!" integrantes="Lis, Si e Mands" />
+      <Header nomeGrupo="Luísa Cristina!" integrantes="Me, Myself and I." />
       <Contador />
+      <Footer />
     </div>
   );
 }

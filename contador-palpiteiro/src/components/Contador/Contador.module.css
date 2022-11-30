@@ -1,0 +1,7 @@
+.botao {
+    background-color: rgb(250, 183, 60);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 25px;
+}

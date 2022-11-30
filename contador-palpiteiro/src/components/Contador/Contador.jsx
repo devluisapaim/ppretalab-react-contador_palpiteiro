@@ -1,5 +1,6 @@
-import react, { useState } from "react";
-import Palpiteiro from "./Palpiteiro";
+import { useState } from "react";
+import Palpiteiro from "../Palpiteiro/Palpiteiro";
+import styles from "./Contador.module.css";
 
 const ContadorPalpiteiro = () => {
   const [numero, setNumero] = useState(0);
@@ -14,12 +15,13 @@ const ContadorPalpiteiro = () => {
 
   return (
     <>
-      <button onClick={somarUm}>+</button>
+      <button className={styles.botao} onClick={somarUm}>+</button>
       <p>{numero}</p>
-      <button onClick={subtrairUm}>-</button>
+      <button className={styles.botao} onClick={subtrairUm}>-</button>
       <br />
-      <Palpiteiro  />
+      <Palpiteiro valor={numero}/>
     </>
   );
 };
+
 export default ContadorPalpiteiro;
